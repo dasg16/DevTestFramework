@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">38 methods,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="checkLinksToFacebook">checkLinksToFacebook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="checkLinksToYouTube">checkLinksToYouTube</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="homePNavigationDisplayed">homePNavigationDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validConPwdNotSame">validConPwdNotSame</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validConPwdSame">validConPwdSame</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateContact" hash-for-method="validContactAddr">validContactAddr</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateContact" hash-for-method="validContactDetlsLable">validContactDetlsLable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateContact" hash-for-method="validContactEmails">validContactEmails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateContact" hash-for-method="validContactPhone">validContactPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateContact" hash-for-method="validContactTitle">validContactTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validEmailAdd">validEmailAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateLogin" hash-for-method="validEmailPwd(gourav, 145789)">validEmailPwd(gourav, 145789)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateLogin" hash-for-method="validEmailPwd(gourav@, 145789)">validEmailPwd(gourav@, 145789)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateLogin" hash-for-method="validEmailPwd(gourav@gmail.com, 12345)">validEmailPwd(gourav@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validEmailReqdError">validEmailReqdError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validErrorBgColor">validErrorBgColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateLogin" hash-for-method="validErrorBgColor">validErrorBgColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validErrorColor">validErrorColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateLogin" hash-for-method="validErrorColor">validErrorColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validFCSeleStudEnrol">validFCSeleStudEnrol</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validFCSelenimLinks">validFCSelenimLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validFCSelenimRate">validFCSelenimRate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validFCSeleniumDiscPrice">validFCSeleniumDiscPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validFCSeleniumPrice">validFCSeleniumPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validFeaturedCourses">validFeaturedCourses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateLogin" hash-for-method="validForgetPwd">validForgetPwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validFullName">validFullName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarAbout">validNaviBarAbout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarBlog">validNaviBarBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarContact">validNaviBarContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarCourses">validNaviBarCourses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarHome">validNaviBarHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarIntGuides">validNaviBarIntGuides</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarPractice">validNaviBarPractice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateHomePage" hash-for-method="validNaviBarVideos">validNaviBarVideos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validPolicyCheckBox">validPolicyCheckBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validPwdLength">validPwdLength</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WebTestFrame.validateCreateAccount" hash-for-method="validPwdNull">validPwdNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTestFrame.validateContact</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validContactAddr">
+                  </a> <!-- validContactAddr -->
+                  <span class="method-name">validContactAddr</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validContactDetlsLable">
+                  </a> <!-- validContactDetlsLable -->
+                  <span class="method-name">validContactDetlsLable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validContactEmails">
+                  </a> <!-- validContactEmails -->
+                  <span class="method-name">validContactEmails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validContactPhone">
+                  </a> <!-- validContactPhone -->
+                  <span class="method-name">validContactPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validContactTitle">
+                  </a> <!-- validContactTitle -->
+                  <span class="method-name">validContactTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTestFrame.validateCreateAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validConPwdNotSame">
+                  </a> <!-- validConPwdNotSame -->
+                  <span class="method-name">validConPwdNotSame</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validConPwdSame">
+                  </a> <!-- validConPwdSame -->
+                  <span class="method-name">validConPwdSame</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailAdd">
+                  </a> <!-- validEmailAdd -->
+                  <span class="method-name">validEmailAdd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailReqdError">
+                  </a> <!-- validEmailReqdError -->
+                  <span class="method-name">validEmailReqdError</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validErrorBgColor">
+                  </a> <!-- validErrorBgColor -->
+                  <span class="method-name">validErrorBgColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validErrorColor">
+                  </a> <!-- validErrorColor -->
+                  <span class="method-name">validErrorColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFullName">
+                  </a> <!-- validFullName -->
+                  <span class="method-name">validFullName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validPolicyCheckBox">
+                  </a> <!-- validPolicyCheckBox -->
+                  <span class="method-name">validPolicyCheckBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validPwdLength">
+                  </a> <!-- validPwdLength -->
+                  <span class="method-name">validPwdLength</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validPwdNull">
+                  </a> <!-- validPwdNull -->
+                  <span class="method-name">validPwdNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTestFrame.validateHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLinksToFacebook">
+                  </a> <!-- checkLinksToFacebook -->
+                  <span class="method-name">checkLinksToFacebook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLinksToYouTube">
+                  </a> <!-- checkLinksToYouTube -->
+                  <span class="method-name">checkLinksToYouTube</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePNavigationDisplayed">
+                  </a> <!-- homePNavigationDisplayed -->
+                  <span class="method-name">homePNavigationDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFCSeleStudEnrol">
+                  </a> <!-- validFCSeleStudEnrol -->
+                  <span class="method-name">validFCSeleStudEnrol</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFCSelenimLinks">
+                  </a> <!-- validFCSelenimLinks -->
+                  <span class="method-name">validFCSelenimLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFCSelenimRate">
+                  </a> <!-- validFCSelenimRate -->
+                  <span class="method-name">validFCSelenimRate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFCSeleniumDiscPrice">
+                  </a> <!-- validFCSeleniumDiscPrice -->
+                  <span class="method-name">validFCSeleniumDiscPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFCSeleniumPrice">
+                  </a> <!-- validFCSeleniumPrice -->
+                  <span class="method-name">validFCSeleniumPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFeaturedCourses">
+                  </a> <!-- validFeaturedCourses -->
+                  <span class="method-name">validFeaturedCourses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarAbout">
+                  </a> <!-- validNaviBarAbout -->
+                  <span class="method-name">validNaviBarAbout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarBlog">
+                  </a> <!-- validNaviBarBlog -->
+                  <span class="method-name">validNaviBarBlog</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarContact">
+                  </a> <!-- validNaviBarContact -->
+                  <span class="method-name">validNaviBarContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarCourses">
+                  </a> <!-- validNaviBarCourses -->
+                  <span class="method-name">validNaviBarCourses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarHome">
+                  </a> <!-- validNaviBarHome -->
+                  <span class="method-name">validNaviBarHome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarIntGuides">
+                  </a> <!-- validNaviBarIntGuides -->
+                  <span class="method-name">validNaviBarIntGuides</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarPractice">
+                  </a> <!-- validNaviBarPractice -->
+                  <span class="method-name">validNaviBarPractice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validNaviBarVideos">
+                  </a> <!-- validNaviBarVideos -->
+                  <span class="method-name">validNaviBarVideos</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WebTestFrame.validateLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailPwd(gourav, 145789)">
+                  </a> <!-- validEmailPwd(gourav, 145789) -->
+                  <span class="method-name">validEmailPwd</span>
+                  <span class="parameters">(gourav, 145789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailPwd(gourav@, 145789)">
+                  </a> <!-- validEmailPwd(gourav@, 145789) -->
+                  <span class="method-name">validEmailPwd</span>
+                  <span class="parameters">(gourav@, 145789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailPwd(gourav@gmail.com, 12345)">
+                  </a> <!-- validEmailPwd(gourav@gmail.com, 12345) -->
+                  <span class="method-name">validEmailPwd</span>
+                  <span class="parameters">(gourav@gmail.com, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validErrorBgColor">
+                  </a> <!-- validErrorBgColor -->
+                  <span class="method-name">validErrorBgColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validErrorColor">
+                  </a> <!-- validErrorColor -->
+                  <span class="method-name">validErrorColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validForgetPwd">
+                  </a> <!-- validForgetPwd -->
+                  <span class="method-name">validForgetPwd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/gouravdas/git/DevTestFramework/BuildTestFrame/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;WebTestFrame.listeners&quot;/&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WebTestFrame.validateCreateAccount&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WebTestFrame.validateHomePage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test name=&quot;Test5&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WebTestFrame.validateLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test5 --&gt;
+  &lt;test name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WebTestFrame.validateContact&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test5 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(38);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkLinksToFacebook')
+data.setCell(0, 2, 'WebTestFrame.validateHomePage')
+data.setCell(0, 3, 14584);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validEmailReqdError')
+data.setCell(1, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(1, 3, 9775);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validContactTitle')
+data.setCell(2, 2, 'WebTestFrame.validateContact')
+data.setCell(2, 3, 7396);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkLinksToYouTube')
+data.setCell(3, 2, 'WebTestFrame.validateHomePage')
+data.setCell(3, 3, 7165);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validNaviBarCourses')
+data.setCell(4, 2, 'WebTestFrame.validateHomePage')
+data.setCell(4, 3, 4203);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validNaviBarBlog')
+data.setCell(5, 2, 'WebTestFrame.validateHomePage')
+data.setCell(5, 3, 3067);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validForgetPwd')
+data.setCell(6, 2, 'WebTestFrame.validateLogin')
+data.setCell(6, 3, 3014);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validNaviBarAbout')
+data.setCell(7, 2, 'WebTestFrame.validateHomePage')
+data.setCell(7, 3, 2717);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validPwdLength')
+data.setCell(8, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(8, 3, 2487);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validNaviBarPractice')
+data.setCell(9, 2, 'WebTestFrame.validateHomePage')
+data.setCell(9, 3, 1971);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validConPwdNotSame')
+data.setCell(10, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(10, 3, 1723);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validNaviBarHome')
+data.setCell(11, 2, 'WebTestFrame.validateHomePage')
+data.setCell(11, 3, 1662);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validConPwdSame')
+data.setCell(12, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(12, 3, 1450);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validEmailPwd')
+data.setCell(13, 2, 'WebTestFrame.validateLogin')
+data.setCell(13, 3, 1404);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validNaviBarVideos')
+data.setCell(14, 2, 'WebTestFrame.validateHomePage')
+data.setCell(14, 3, 1399);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validNaviBarIntGuides')
+data.setCell(15, 2, 'WebTestFrame.validateHomePage')
+data.setCell(15, 3, 1324);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validPolicyCheckBox')
+data.setCell(16, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(16, 3, 1266);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validEmailAdd')
+data.setCell(17, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(17, 3, 1265);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validErrorBgColor')
+data.setCell(18, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(18, 3, 1189);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validPwdNull')
+data.setCell(19, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(19, 3, 1094);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validNaviBarContact')
+data.setCell(20, 2, 'WebTestFrame.validateHomePage')
+data.setCell(20, 3, 1075);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validErrorColor')
+data.setCell(21, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(21, 3, 942);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validFullName')
+data.setCell(22, 2, 'WebTestFrame.validateCreateAccount')
+data.setCell(22, 3, 904);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validFeaturedCourses')
+data.setCell(23, 2, 'WebTestFrame.validateHomePage')
+data.setCell(23, 3, 640);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'homePNavigationDisplayed')
+data.setCell(24, 2, 'WebTestFrame.validateHomePage')
+data.setCell(24, 3, 344);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'validFCSelenimLinks')
+data.setCell(25, 2, 'WebTestFrame.validateHomePage')
+data.setCell(25, 3, 276);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'validContactEmails')
+data.setCell(26, 2, 'WebTestFrame.validateContact')
+data.setCell(26, 3, 181);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'validContactDetlsLable')
+data.setCell(27, 2, 'WebTestFrame.validateContact')
+data.setCell(27, 3, 82);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validFCSeleStudEnrol')
+data.setCell(28, 2, 'WebTestFrame.validateHomePage')
+data.setCell(28, 3, 43);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'validFCSeleniumDiscPrice')
+data.setCell(29, 2, 'WebTestFrame.validateHomePage')
+data.setCell(29, 3, 39);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'validContactPhone')
+data.setCell(30, 2, 'WebTestFrame.validateContact')
+data.setCell(30, 3, 39);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'validContactAddr')
+data.setCell(31, 2, 'WebTestFrame.validateContact')
+data.setCell(31, 3, 37);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'validErrorColor')
+data.setCell(32, 2, 'WebTestFrame.validateLogin')
+data.setCell(32, 3, 36);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validErrorBgColor')
+data.setCell(33, 2, 'WebTestFrame.validateLogin')
+data.setCell(33, 3, 35);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validFCSeleniumPrice')
+data.setCell(34, 2, 'WebTestFrame.validateHomePage')
+data.setCell(34, 3, 26);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'validFCSelenimRate')
+data.setCell(35, 2, 'WebTestFrame.validateHomePage')
+data.setCell(35, 3, 22);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'validEmailPwd')
+data.setCell(36, 2, 'WebTestFrame.validateLogin')
+data.setCell(36, 3, 2);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'validEmailPwd')
+data.setCell(37, 2, 'WebTestFrame.validateLogin')
+data.setCell(37, 3, 2);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WebTestFrame.validateCreateAccount</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validSignUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WebTestFrame.validateHomePage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validMissionQuotes</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WebTestFrame.validateLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validPwd</span>
+                <br/>
+                <span class="ignored-method-name">validEmailAddrs</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTestFrame.validateCreateAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">validEmailReqdError</span>
+                <span class="method-start">8961 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validEmailAdd</span>
+                <span class="method-start">18738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validFullName</span>
+                <span class="method-start">20004 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validPwdNull</span>
+                <span class="method-start">20911 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validPwdLength</span>
+                <span class="method-start">22007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validConPwdSame</span>
+                <span class="method-start">24495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validConPwdNotSame</span>
+                <span class="method-start">25946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validPolicyCheckBox</span>
+                <span class="method-start">27671 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validErrorColor</span>
+                <span class="method-start">28938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validErrorBgColor</span>
+                <span class="method-start">29881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">31072 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTestFrame.validateHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">31217 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">checkLinksToFacebook</span>
+                <span class="method-start">38568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLinksToYouTube</span>
+                <span class="method-start">53153 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homePNavigationDisplayed</span>
+                <span class="method-start">60322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validFCSeleStudEnrol</span>
+                <span class="method-start">60667 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validFCSelenimLinks</span>
+                <span class="method-start">60711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validFCSelenimRate</span>
+                <span class="method-start">60988 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validFCSeleniumDiscPrice</span>
+                <span class="method-start">61010 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validFCSeleniumPrice</span>
+                <span class="method-start">61050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validFeaturedCourses</span>
+                <span class="method-start">61077 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarAbout</span>
+                <span class="method-start">61718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarBlog</span>
+                <span class="method-start">64435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarContact</span>
+                <span class="method-start">67503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarCourses</span>
+                <span class="method-start">68580 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarHome</span>
+                <span class="method-start">72784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarIntGuides</span>
+                <span class="method-start">74450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarPractice</span>
+                <span class="method-start">75775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validNaviBarVideos</span>
+                <span class="method-start">77746 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">79146 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTestFrame.validateLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">79341 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">validPopClose</span>
+                <span class="method-start">85416 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validEmailPwd(gourav@gmail.com, 12345)</span>
+                <span class="method-start">93460 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validEmailPwd(gourav, 145789)</span>
+                <span class="method-start">94864 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validEmailPwd(gourav@, 145789)</span>
+                <span class="method-start">94867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validErrorColor</span>
+                <span class="method-start">94870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validErrorBgColor</span>
+                <span class="method-start">94908 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validForgetPwd</span>
+                <span class="method-start">94944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97959 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WebTestFrame.validateContact</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">98080 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">validContactTitle</span>
+                <span class="method-start">104537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validContactDetlsLable</span>
+                <span class="method-start">111934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validContactAddr</span>
+                <span class="method-start">112017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validContactPhone</span>
+                <span class="method-start">112055 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validContactEmails</span>
+                <span class="method-start">112094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">112275 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

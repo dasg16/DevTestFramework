@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="38" passed="38">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="112363" started-at="2018-07-14T23:24:03Z" finished-at="2018-07-14T23:25:55Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="31190" started-at="2018-07-14T23:24:03Z" finished-at="2018-07-14T23:24:34Z">
+      <class name="WebTestFrame.validateCreateAccount">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="initialize" is-config="true" duration-ms="8953" started-at="2018-07-14T19:24:03Z" finished-at="2018-07-14T19:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validEmailReqdError()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validEmailReqdError" duration-ms="9775" started-at="2018-07-14T19:24:12Z" finished-at="2018-07-14T19:24:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailReqdError -->
+        <test-method status="PASS" signature="validEmailAdd()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validEmailAdd" duration-ms="1265" started-at="2018-07-14T19:24:22Z" finished-at="2018-07-14T19:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailAdd -->
+        <test-method status="PASS" signature="validFullName()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validFullName" duration-ms="904" started-at="2018-07-14T19:24:23Z" finished-at="2018-07-14T19:24:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validFullName -->
+        <test-method status="PASS" signature="validPwdNull()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validPwdNull" duration-ms="1094" started-at="2018-07-14T19:24:24Z" finished-at="2018-07-14T19:24:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validPwdNull -->
+        <test-method status="PASS" signature="validPwdLength()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validPwdLength" duration-ms="2487" started-at="2018-07-14T19:24:25Z" finished-at="2018-07-14T19:24:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validPwdLength -->
+        <test-method status="PASS" signature="validConPwdSame()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validConPwdSame" duration-ms="1450" started-at="2018-07-14T19:24:27Z" finished-at="2018-07-14T19:24:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validConPwdSame -->
+        <test-method status="PASS" signature="validConPwdNotSame()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validConPwdNotSame" duration-ms="1723" started-at="2018-07-14T19:24:29Z" finished-at="2018-07-14T19:24:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validConPwdNotSame -->
+        <test-method status="PASS" signature="validPolicyCheckBox()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validPolicyCheckBox" duration-ms="1266" started-at="2018-07-14T19:24:30Z" finished-at="2018-07-14T19:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validPolicyCheckBox -->
+        <test-method status="PASS" signature="validErrorColor()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validErrorColor" duration-ms="942" started-at="2018-07-14T19:24:32Z" finished-at="2018-07-14T19:24:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validErrorColor -->
+        <test-method status="PASS" signature="validErrorBgColor()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="validErrorBgColor" duration-ms="1189" started-at="2018-07-14T19:24:33Z" finished-at="2018-07-14T19:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validErrorBgColor -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTestFrame.validateCreateAccount@49ec71f8]" name="teardown" is-config="true" duration-ms="111" started-at="2018-07-14T19:24:34Z" finished-at="2018-07-14T19:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- WebTestFrame.validateCreateAccount -->
+    </test> <!-- Test1 -->
+    <test name="Test3" duration-ms="48116" started-at="2018-07-14T23:24:34Z" finished-at="2018-07-14T23:25:22Z">
+      <class name="WebTestFrame.validateHomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="initialize" is-config="true" duration-ms="7350" started-at="2018-07-14T19:24:34Z" finished-at="2018-07-14T19:24:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="checkLinksToFacebook()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="checkLinksToFacebook" duration-ms="14584" started-at="2018-07-14T19:24:41Z" finished-at="2018-07-14T19:24:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLinksToFacebook -->
+        <test-method status="PASS" signature="checkLinksToYouTube()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="checkLinksToYouTube" duration-ms="7165" started-at="2018-07-14T19:24:56Z" finished-at="2018-07-14T19:25:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLinksToYouTube -->
+        <test-method status="PASS" signature="homePNavigationDisplayed()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="homePNavigationDisplayed" duration-ms="344" started-at="2018-07-14T19:25:03Z" finished-at="2018-07-14T19:25:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePNavigationDisplayed -->
+        <test-method status="PASS" signature="validFCSeleStudEnrol()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validFCSeleStudEnrol" duration-ms="43" started-at="2018-07-14T19:25:03Z" finished-at="2018-07-14T19:25:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validFCSeleStudEnrol -->
+        <test-method status="PASS" signature="validFCSelenimLinks()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validFCSelenimLinks" duration-ms="276" started-at="2018-07-14T19:25:04Z" finished-at="2018-07-14T19:25:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validFCSelenimLinks -->
+        <test-method status="PASS" signature="validFCSelenimRate()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validFCSelenimRate" duration-ms="22" started-at="2018-07-14T19:25:04Z" finished-at="2018-07-14T19:25:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validFCSelenimRate -->
+        <test-method status="PASS" signature="validFCSeleniumDiscPrice()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validFCSeleniumDiscPrice" duration-ms="39" started-at="2018-07-14T19:25:04Z" finished-at="2018-07-14T19:25:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validFCSeleniumDiscPrice -->
+        <test-method status="PASS" signature="validFCSeleniumPrice()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validFCSeleniumPrice" duration-ms="26" started-at="2018-07-14T19:25:04Z" finished-at="2018-07-14T19:25:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validFCSeleniumPrice -->
+        <test-method status="PASS" signature="validFeaturedCourses()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validFeaturedCourses" duration-ms="640" started-at="2018-07-14T19:25:04Z" finished-at="2018-07-14T19:25:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validFeaturedCourses -->
+        <test-method status="PASS" signature="validNaviBarAbout()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarAbout" duration-ms="2717" started-at="2018-07-14T19:25:05Z" finished-at="2018-07-14T19:25:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarAbout -->
+        <test-method status="PASS" signature="validNaviBarBlog()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarBlog" duration-ms="3067" started-at="2018-07-14T19:25:07Z" finished-at="2018-07-14T19:25:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarBlog -->
+        <test-method status="PASS" signature="validNaviBarContact()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarContact" duration-ms="1075" started-at="2018-07-14T19:25:10Z" finished-at="2018-07-14T19:25:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarContact -->
+        <test-method status="PASS" signature="validNaviBarCourses()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarCourses" duration-ms="4203" started-at="2018-07-14T19:25:11Z" finished-at="2018-07-14T19:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarCourses -->
+        <test-method status="PASS" signature="validNaviBarHome()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarHome" duration-ms="1662" started-at="2018-07-14T19:25:16Z" finished-at="2018-07-14T19:25:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarHome -->
+        <test-method status="PASS" signature="validNaviBarIntGuides()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarIntGuides" duration-ms="1324" started-at="2018-07-14T19:25:17Z" finished-at="2018-07-14T19:25:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarIntGuides -->
+        <test-method status="PASS" signature="validNaviBarPractice()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarPractice" duration-ms="1971" started-at="2018-07-14T19:25:19Z" finished-at="2018-07-14T19:25:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarPractice -->
+        <test-method status="PASS" signature="validNaviBarVideos()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="validNaviBarVideos" duration-ms="1399" started-at="2018-07-14T19:25:21Z" finished-at="2018-07-14T19:25:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validNaviBarVideos -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTestFrame.validateHomePage@409bf450]" name="teardown" is-config="true" duration-ms="181" started-at="2018-07-14T19:25:22Z" finished-at="2018-07-14T19:25:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- WebTestFrame.validateHomePage -->
+    </test> <!-- Test3 -->
+    <test name="Test5" duration-ms="18728" started-at="2018-07-14T23:25:22Z" finished-at="2018-07-14T23:25:41Z">
+      <class name="WebTestFrame.validateLogin">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="initialize" is-config="true" duration-ms="6075" started-at="2018-07-14T19:25:22Z" finished-at="2018-07-14T19:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validPopClose()[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="validPopClose" is-config="true" duration-ms="8043" started-at="2018-07-14T19:25:28Z" finished-at="2018-07-14T19:25:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validPopClose -->
+        <test-method status="PASS" signature="validEmailPwd(java.lang.String, java.lang.String)[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="validEmailPwd" duration-ms="1404" started-at="2018-07-14T19:25:36Z" data-provider="getData" finished-at="2018-07-14T19:25:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gourav@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailPwd -->
+        <test-method status="PASS" signature="validEmailPwd(java.lang.String, java.lang.String)[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="validEmailPwd" duration-ms="2" started-at="2018-07-14T19:25:38Z" data-provider="getData" finished-at="2018-07-14T19:25:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gourav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[145789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailPwd -->
+        <test-method status="PASS" signature="validEmailPwd(java.lang.String, java.lang.String)[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="validEmailPwd" duration-ms="2" started-at="2018-07-14T19:25:38Z" data-provider="getData" finished-at="2018-07-14T19:25:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gourav@]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[145789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailPwd -->
+        <test-method status="PASS" signature="validErrorColor()[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="validErrorColor" duration-ms="36" started-at="2018-07-14T19:25:38Z" finished-at="2018-07-14T19:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validErrorColor -->
+        <test-method status="PASS" signature="validErrorBgColor()[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="validErrorBgColor" duration-ms="35" started-at="2018-07-14T19:25:38Z" finished-at="2018-07-14T19:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validErrorBgColor -->
+        <test-method status="PASS" signature="validForgetPwd()[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="validForgetPwd" duration-ms="3014" started-at="2018-07-14T19:25:38Z" finished-at="2018-07-14T19:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validForgetPwd -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTestFrame.validateLogin@145f66e3]" name="teardown" is-config="true" duration-ms="109" started-at="2018-07-14T19:25:41Z" finished-at="2018-07-14T19:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- WebTestFrame.validateLogin -->
+    </test> <!-- Test5 -->
+    <test name="Test2" duration-ms="14276" started-at="2018-07-14T23:25:41Z" finished-at="2018-07-14T23:25:55Z">
+      <class name="WebTestFrame.validateContact">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTestFrame.validateContact@34a3d150]" name="initialize" is-config="true" duration-ms="6457" started-at="2018-07-14T19:25:41Z" finished-at="2018-07-14T19:25:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validContactTitle()[pri:0, instance:WebTestFrame.validateContact@34a3d150]" name="validContactTitle" duration-ms="7396" started-at="2018-07-14T19:25:47Z" finished-at="2018-07-14T19:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validContactTitle -->
+        <test-method status="PASS" signature="validContactDetlsLable()[pri:0, instance:WebTestFrame.validateContact@34a3d150]" name="validContactDetlsLable" duration-ms="82" started-at="2018-07-14T19:25:55Z" finished-at="2018-07-14T19:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validContactDetlsLable -->
+        <test-method status="PASS" signature="validContactAddr()[pri:0, instance:WebTestFrame.validateContact@34a3d150]" name="validContactAddr" duration-ms="37" started-at="2018-07-14T19:25:55Z" finished-at="2018-07-14T19:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validContactAddr -->
+        <test-method status="PASS" signature="validContactPhone()[pri:0, instance:WebTestFrame.validateContact@34a3d150]" name="validContactPhone" duration-ms="39" started-at="2018-07-14T19:25:55Z" finished-at="2018-07-14T19:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validContactPhone -->
+        <test-method status="PASS" signature="validContactEmails()[pri:0, instance:WebTestFrame.validateContact@34a3d150]" name="validContactEmails" duration-ms="181" started-at="2018-07-14T19:25:55Z" finished-at="2018-07-14T19:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validContactEmails -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTestFrame.validateContact@34a3d150]" name="teardown" is-config="true" duration-ms="81" started-at="2018-07-14T19:25:55Z" finished-at="2018-07-14T19:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- WebTestFrame.validateContact -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

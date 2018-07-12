@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test1</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi">0</td><td class="numi">31.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Test3</td><td class="numi">17</td><td class="numi">17</td><td class="numi">0</td><td class="numi">0</td><td class="numi">48.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test5</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">18.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Test2</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">14.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">38</td><td class="numi">38</td><td class="numi">0</td><td class="numi">0</td><td class="numi">112.4 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test1 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="10">WebTestFrame.validateCreateAccount</td><td><a href="#m1"><b>validConPwdNotSame</b>  </a></td><td class="numi">1</td><td>1531610669253</td><td class="numi">1723</td></tr><tr class="passedodd"><td><a href="#m2"><b>validConPwdSame</b>  </a></td><td class="numi">1</td><td>1531610667802</td><td class="numi">1450</td></tr><tr class="passedodd"><td><a href="#m3"><b>validEmailAdd</b>  </a></td><td class="numi">1</td><td>1531610662045</td><td class="numi">1265</td></tr><tr class="passedodd"><td><a href="#m4"><b>validEmailReqdError</b>  </a></td><td class="numi">1</td><td>1531610652268</td><td class="numi">9775</td></tr><tr class="passedodd"><td><a href="#m5"><b>validErrorBgColor</b>  </a></td><td class="numi">1</td><td>1531610673188</td><td class="numi">1189</td></tr><tr class="passedodd"><td><a href="#m6"><b>validErrorColor</b>  </a></td><td class="numi">1</td><td>1531610672245</td><td class="numi">942</td></tr><tr class="passedodd"><td><a href="#m7"><b>validFullName</b>  </a></td><td class="numi">1</td><td>1531610663311</td><td class="numi">904</td></tr><tr class="passedodd"><td><a href="#m8"><b>validPolicyCheckBox</b>  </a></td><td class="numi">1</td><td>1531610670978</td><td class="numi">1266</td></tr><tr class="passedodd"><td><a href="#m9"><b>validPwdLength</b>  </a></td><td class="numi">1</td><td>1531610665314</td><td class="numi">2487</td></tr><tr class="passedodd"><td><a href="#m10"><b>validPwdNull</b>  </a></td><td class="numi">1</td><td>1531610664218</td><td class="numi">1094</td></tr>
+<tr><th colspan="4">Test3 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="17">WebTestFrame.validateHomePage</td><td><a href="#m11"><b>checkLinksToFacebook</b>  </a></td><td class="numi">1</td><td>1531610681875</td><td class="numi">14584</td></tr><tr class="passedodd"><td><a href="#m12"><b>checkLinksToYouTube</b>  </a></td><td class="numi">1</td><td>1531610696460</td><td class="numi">7165</td></tr><tr class="passedodd"><td><a href="#m13"><b>homePNavigationDisplayed</b>  </a></td><td class="numi">1</td><td>1531610703629</td><td class="numi">344</td></tr><tr class="passedodd"><td><a href="#m14"><b>validFCSeleStudEnrol</b>  </a></td><td class="numi">1</td><td>1531610703974</td><td class="numi">43</td></tr><tr class="passedodd"><td><a href="#m15"><b>validFCSelenimLinks</b>  </a></td><td class="numi">1</td><td>1531610704018</td><td class="numi">276</td></tr><tr class="passedodd"><td><a href="#m16"><b>validFCSelenimRate</b>  </a></td><td class="numi">1</td><td>1531610704295</td><td class="numi">22</td></tr><tr class="passedodd"><td><a href="#m17"><b>validFCSeleniumDiscPrice</b>  </a></td><td class="numi">1</td><td>1531610704317</td><td class="numi">39</td></tr><tr class="passedodd"><td><a href="#m18"><b>validFCSeleniumPrice</b>  </a></td><td class="numi">1</td><td>1531610704357</td><td class="numi">26</td></tr><tr class="passedodd"><td><a href="#m19"><b>validFeaturedCourses</b>  </a></td><td class="numi">1</td><td>1531610704384</td><td class="numi">640</td></tr><tr class="passedodd"><td><a href="#m20"><b>validNaviBarAbout</b>  </a></td><td class="numi">1</td><td>1531610705025</td><td class="numi">2717</td></tr><tr class="passedodd"><td><a href="#m21"><b>validNaviBarBlog</b>  </a></td><td class="numi">1</td><td>1531610707742</td><td class="numi">3067</td></tr><tr class="passedodd"><td><a href="#m22"><b>validNaviBarContact</b>  </a></td><td class="numi">1</td><td>1531610710810</td><td class="numi">1075</td></tr><tr class="passedodd"><td><a href="#m23"><b>validNaviBarCourses</b>  </a></td><td class="numi">1</td><td>1531610711887</td><td class="numi">4203</td></tr><tr class="passedodd"><td><a href="#m24"><b>validNaviBarHome</b>  </a></td><td class="numi">1</td><td>1531610716091</td><td class="numi">1662</td></tr><tr class="passedodd"><td><a href="#m25"><b>validNaviBarIntGuides</b>  </a></td><td class="numi">1</td><td>1531610717757</td><td class="numi">1324</td></tr><tr class="passedodd"><td><a href="#m26"><b>validNaviBarPractice</b>  </a></td><td class="numi">1</td><td>1531610719082</td><td class="numi">1971</td></tr><tr class="passedodd"><td><a href="#m27"><b>validNaviBarVideos</b>  </a></td><td class="numi">1</td><td>1531610721053</td><td class="numi">1399</td></tr>
+<tr><th colspan="4">Test5 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">WebTestFrame.validateLogin</td><td><a href="#m28"><b>validEmailPwd</b>  </a></td><td class="numi">3</td><td>1531610736767</td><td class="numi">1409</td></tr><tr class="passedodd"><td><a href="#m29"><b>validEmailPwd</b>  </a></td><td class="numi">3</td><td>1531610736767</td><td class="numi">1409</td></tr><tr class="passedodd"><td><a href="#m30"><b>validEmailPwd</b>  </a></td><td class="numi">3</td><td>1531610736767</td><td class="numi">1409</td></tr><tr class="passedodd"><td><a href="#m31"><b>validErrorBgColor</b>  </a></td><td class="numi">1</td><td>1531610738215</td><td class="numi">35</td></tr><tr class="passedodd"><td><a href="#m32"><b>validErrorColor</b>  </a></td><td class="numi">1</td><td>1531610738177</td><td class="numi">36</td></tr><tr class="passedodd"><td><a href="#m33"><b>validForgetPwd</b>  </a></td><td class="numi">1</td><td>1531610738251</td><td class="numi">3014</td></tr>
+<tr><th colspan="4">Test2 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">WebTestFrame.validateContact</td><td><a href="#m34"><b>validContactAddr</b>  </a></td><td class="numi">1</td><td>1531610755324</td><td class="numi">37</td></tr><tr class="passedodd"><td><a href="#m35"><b>validContactDetlsLable</b>  </a></td><td class="numi">1</td><td>1531610755241</td><td class="numi">82</td></tr><tr class="passedodd"><td><a href="#m36"><b>validContactEmails</b>  </a></td><td class="numi">1</td><td>1531610755401</td><td class="numi">181</td></tr><tr class="passedodd"><td><a href="#m37"><b>validContactPhone</b>  </a></td><td class="numi">1</td><td>1531610755362</td><td class="numi">39</td></tr><tr class="passedodd"><td><a href="#m38"><b>validContactTitle</b>  </a></td><td class="numi">1</td><td>1531610747844</td><td class="numi">7396</td></tr>
+</table>
+<h1>Test1</h1>
+<h2 id="m1">WebTestFrame.validateCreateAccount:validEmailAdd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">WebTestFrame.validateCreateAccount:validConPwdNotSame</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">WebTestFrame.validateCreateAccount:validErrorBgColor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">WebTestFrame.validateCreateAccount:validConPwdSame</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">WebTestFrame.validateCreateAccount:validEmailReqdError</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">WebTestFrame.validateCreateAccount:validFullName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">WebTestFrame.validateCreateAccount:validPolicyCheckBox</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">WebTestFrame.validateCreateAccount:validPwdNull</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">WebTestFrame.validateCreateAccount:validPwdLength</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">WebTestFrame.validateCreateAccount:validErrorColor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test3</h1>
+<h2 id="m11">WebTestFrame.validateHomePage:checkLinksToYouTube</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">WebTestFrame.validateHomePage:validFCSeleniumDiscPrice</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">WebTestFrame.validateHomePage:validFCSelenimLinks</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">WebTestFrame.validateHomePage:validNaviBarHome</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">WebTestFrame.validateHomePage:validNaviBarBlog</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">WebTestFrame.validateHomePage:validNaviBarPractice</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">WebTestFrame.validateHomePage:validFCSelenimRate</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">WebTestFrame.validateHomePage:validNaviBarVideos</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">WebTestFrame.validateHomePage:validFCSeleniumPrice</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">WebTestFrame.validateHomePage:validNaviBarIntGuides</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">WebTestFrame.validateHomePage:validNaviBarContact</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">WebTestFrame.validateHomePage:homePNavigationDisplayed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">WebTestFrame.validateHomePage:checkLinksToFacebook</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">WebTestFrame.validateHomePage:validNaviBarAbout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">WebTestFrame.validateHomePage:validNaviBarCourses</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">WebTestFrame.validateHomePage:validFCSeleStudEnrol</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">WebTestFrame.validateHomePage:validFeaturedCourses</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test5</h1>
+<h2 id="m28">WebTestFrame.validateLogin:validForgetPwd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">WebTestFrame.validateLogin:validErrorColor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">WebTestFrame.validateLogin:validEmailPwd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>gourav</td>
+<td>145789</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">WebTestFrame.validateLogin:validEmailPwd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>gourav@</td>
+<td>145789</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">WebTestFrame.validateLogin:validErrorBgColor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">WebTestFrame.validateLogin:validEmailPwd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>gourav@gmail.com</td>
+<td>12345</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test2</h1>
+<h2 id="m34">WebTestFrame.validateContact:validContactEmails</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">WebTestFrame.validateContact:validContactAddr</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">WebTestFrame.validateContact:validContactPhone</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">WebTestFrame.validateContact:validContactDetlsLable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">WebTestFrame.validateContact:validContactTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
