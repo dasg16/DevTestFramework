@@ -40,7 +40,7 @@ public class ValidatePractice extends base {
 	// <exclude name="validPracticeWebTable"/>
 	// <exclude name="validPracticeMouseOver"/>
 
-	@Test
+	@Test(priority = 0)
 	public void validPracticeLink() throws IOException, Exception {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -70,7 +70,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 1)
 	public void validPracticeRadio() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -87,7 +87,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void validSuggessionTxtBox() {
 
 		PracticePage pracP = new PracticePage(driver);
@@ -106,7 +106,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 3)
 	public void validPracticeDropdown() {
 		PracticePage pracP = new PracticePage(driver);
 
