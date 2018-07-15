@@ -16,17 +16,13 @@ public class PracticePage {
 	By suggessionTxtBoxTitle = By.xpath("//*[@id=\'select-class-example\']/fieldset/legend");
 	By suggessionTxtBoxPath = By.xpath("//*[@id=\'autocomplete\']");
 
-	// Failed xpath and css below because it is starting with html
-	// By dropdownTitle= By.xpath("/html/body/div[1]/div[3]/fieldset[1]/legend[1]");
-	// By dropdownTitle= By.cssSelector(".cen-right-align > fieldset:nth-child(1) >
-	// legend:nth-child(1)");
-	// By dropdownTitle= By.xpath("//*[text()= ‘Dropdown Example’] ");
+	By dropdownTitle = By.xpath("/html/body/div[1]/div[3]/fieldset/legend");
 	By dropdownCommonPath = By.xpath("//*[@id=\'dropdown-class-example\']");
+	By dropdownOption1 = By.xpath("//*[@id=\'dropdown-class-example\']/option[2]");
+	By dropdownOption2 = By.xpath("//*[@id=\'dropdown-class-example\']/option[3]");
+	By dropdownOption3 = By.xpath("//*[@id=\'dropdown-class-example\']/option[4]");
 
 	By checkboxTitle = By.xpath("//div[@id=\'checkbox-example\']/fieldset/legend");
-	// Using regular expression to pull out all the check boxes but it doesn't work
-	// when I try to use size() method and use it as a loop.
-	// By checkboxCommonPath= By.xpath("//input[contains(@id,'checkBoxOption')]");
 	By checkboxOnePath = By.xpath("//*[@id=\"checkBoxOption1\"]");
 	By checkboxTwoPath = By.id("checkBoxOption2");
 	By checkboxThreePath = By.id("checkBoxOption3");
@@ -54,8 +50,8 @@ public class PracticePage {
 
 	By mouseHoverTitle = By.xpath("/html/body/div[4]/div/fieldset/legend");
 	By mouseHoverButton = By.xpath("//*[@id=\'mousehover\']");
-	By mouseHoverTopButton = By.xpath("//*[@id=\'mousehover\']/div/a[1]");
-	By mouseHoverReloadButton = By.xpath("//*[@id=\'mousehover\']/div/a[2]");
+	By mouseHoverTopButton = By.xpath("/html/body/div[4]/div/fieldset/div/div/a[1]");
+	By mouseHoverReloadButton = By.xpath("/html/body/div[4]/div/fieldset/div/div/a[2]");
 
 	By iframeTitle = By.xpath("//*[@id=\'user_email\']");
 	By frameCommonPath = By.xpath("//*[@id=\'user_password\']");
@@ -85,13 +81,28 @@ public class PracticePage {
 
 	}
 
-	// public WebElement getDropdownTitle() {
-	// return driver.findElement(dropdownTitle);
-	//
-	// }
+	public WebElement getDropdownTitle() {
+		return driver.findElement(dropdownTitle);
+
+	}
 
 	public WebElement getDropdownCommonPath() {
 		return driver.findElement(dropdownCommonPath);
+
+	}
+
+	public WebElement getDropdownOption1() {
+		return driver.findElement(dropdownOption1);
+
+	}
+
+	public WebElement getDropdownOption2() {
+		return driver.findElement(dropdownOption2);
+
+	}
+
+	public WebElement getDropdownOption3() {
+		return driver.findElement(dropdownOption3);
 
 	}
 

@@ -5,68 +5,15 @@
     <listener class-name="WebTestFrame.listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="Test5(failed)">
+  <test name="Test4(failed)">
     <classes>
-      <class name="WebTestFrame.validateContact">
+      <class name="WebTestFrame.ValidatePractice">
         <methods>
           <include name="initialize"/>
+          <include name="validPracticeMouseOver"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- WebTestFrame.validateContact -->
-      <class name="WebTestFrame.validateCreateAccount">
-        <methods>
-          <include name="teardown"/>
-          <include name="initialize"/>
-        </methods>
-      </class> <!-- WebTestFrame.validateCreateAccount -->
-      <class name="WebTestFrame.validateHomePage">
-        <methods>
-          <include name="initialize"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- WebTestFrame.validateHomePage -->
-      <class name="WebTestFrame.validateLogin">
-        <methods>
-          <include name="validEmailPwd"/>
-          <include name="initialize"/>
-          <include name="validErrorBgColor"/>
-          <include name="validForgetPwd"/>
-          <include name="validPopClose"/>
-          <include name="validErrorColor"/>
-        </methods>
-      </class> <!-- WebTestFrame.validateLogin -->
+      </class> <!-- WebTestFrame.ValidatePractice -->
     </classes>
-  </test> <!-- Test5(failed) -->
-  <test name="Test2(failed)">
-    <classes>
-      <class name="WebTestFrame.validateContact">
-        <methods>
-          <include name="initialize"/>
-          <include name="validContactEmails"/>
-          <include name="validContactDetlsLable"/>
-          <include name="teardown"/>
-          <include name="validContactTitle"/>
-          <include name="validContactAddr"/>
-        </methods>
-      </class> <!-- WebTestFrame.validateContact -->
-      <class name="WebTestFrame.validateCreateAccount">
-        <methods>
-          <include name="teardown"/>
-          <include name="initialize"/>
-        </methods>
-      </class> <!-- WebTestFrame.validateCreateAccount -->
-      <class name="WebTestFrame.validateHomePage">
-        <methods>
-          <include name="initialize"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- WebTestFrame.validateHomePage -->
-      <class name="WebTestFrame.validateLogin">
-        <methods>
-          <include name="initialize"/>
-          <include name="validPopClose"/>
-        </methods>
-      </class> <!-- WebTestFrame.validateLogin -->
-    </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Suite] -->

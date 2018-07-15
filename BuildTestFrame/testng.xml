@@ -39,21 +39,13 @@
 </test>
 
   
-<!-- <test name="Test4">
+<test name="Test4">
       <classes>
       <class name="WebTestFrame.ValidatePractice">
       
-      <methods>
-                  <exclude name="validPracticeDropdown"/>
-                  <exclude name="validPracticeCheckbox"/>
-                  <exclude name="validPracticeElementDisplayed"/>
-                  <exclude name="validPracticeWebTable"/>
-                  <exclude name="validPracticeMouseOver"/>
-       </methods>
-      
       </class>
     </classes>
-</test> -->
+</test>
   
 
  
