@@ -8,7 +8,7 @@ public class ContactPage {
 
 	public WebDriver driver;
 
-	By contactLable = By.xpath("//*[@id=\'contact\']/div/div/div[2]/div[6]/div/h2");
+	private By contactLable = By.xpath("//*[@id=\'contact\']/div/div/div[2]/div[6]/div/h2");
 	By address = By.xpath("//*[@id=\'contact\']/div/div/div[2]/div[7]/div[2]");
 	By phone = By.linkText("(+1) 323-744-6780");
 	By email = By.xpath("//*[@id=\'contact\']/div/div/div[2]/div[11]/div[2]");

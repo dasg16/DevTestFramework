@@ -1,6 +1,10 @@
 package WebTestFrame;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -80,6 +84,24 @@ public class validateLogin extends base {
 		// data[3][1] = "Gourav@123";
 
 		return data;
+
+	}
+
+	@Test
+	public void databaseConnLogin() throws Throwable {
+
+		String host = "localhost";
+		String port = "3306";
+
+		Connection conn = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/EmployeePortal"
+				+ "?useLegacyDatetimeCode=false&serverTimezone=America/New_York", "root", "Bullshit@123");
+		Statement s = conn.createStatement();
+		ResultSet rs = s.executeQuery("select * from credentials where scenario='zerobalancecard'");
+
+		while (rs.next()) {
+			System.out.println(rs.getString("username"));
+			System.out.println(rs.getString("password"));
+		}
 
 	}
 

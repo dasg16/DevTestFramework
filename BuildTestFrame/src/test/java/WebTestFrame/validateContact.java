@@ -1,6 +1,10 @@
 package WebTestFrame;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,6 +24,11 @@ import resources.base;
 public class validateContact extends base {
 
 	public static Logger log = LogManager.getLogger(base.class.getName());
+
+	public static String addr;
+	public static String phone;
+	public static String firstemail;
+	public static String secondemail;
 
 	@BeforeTest
 	public void initialize() throws IOException {
@@ -58,10 +67,10 @@ public class validateContact extends base {
 	public void validContactAddr() throws IOException {
 
 		ContactPage cp = new ContactPage(driver);
-		String addr = cp.getAddress().getText().replaceAll("\n", " ");
-
+		addr = cp.getAddress().getText().replaceAll("\n", " ");
+		addr = addr.replaceAll("ADDRESS ", "");
 		// Validate address.
-		Assert.assertEquals(addr, "ADDRESS Meenakshi Towers, Road Number 4, Kundanhalli, Bangalore, India");
+		Assert.assertEquals(addr, "Meenakshi Towers, Road Number 4, Kundanhalli, Bangalore, India");
 		log.info("Validated contact address");
 	}
 
@@ -69,6 +78,7 @@ public class validateContact extends base {
 	public void validContactPhone() throws IOException {
 
 		ContactPage cp = new ContactPage(driver);
+		phone = cp.getPhone().getText();
 
 		// Validate phone number.
 		Assert.assertEquals(cp.getPhone().getText(), "(+1) 323-744-6780");
@@ -88,14 +98,40 @@ public class validateContact extends base {
 			// Validate email IDs.
 
 			if (email.findElements(By.tagName("a")).get(i).getText().contains("info@qaclickacademy.com")) {
+				firstemail = email.findElements(By.tagName("a")).get(i).getText();
 				Assert.assertEquals(email.findElements(By.tagName("a")).get(i).getText(), "info@qaclickacademy.com");
 				log.info("Validate first Email ID");
 			}
 
 			if (email.findElements(By.tagName("a")).get(i).getText().contains("courses@qaclickacademy.com")) {
+				secondemail = email.findElements(By.tagName("a")).get(i).getText();
 				Assert.assertEquals(email.findElements(By.tagName("a")).get(i).getText(), "courses@qaclickacademy.com");
 				log.info("Validate Second Email ID");
 			}
+
+		}
+
+	}
+
+	@Test(priority = 5)
+	public void databaseConnLogin() throws Throwable {
+
+		String host = "localhost";
+		String port = "3306";
+
+		ContactPage cp = new ContactPage(driver);
+
+		Connection conn = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/qadbt"
+				+ "?useLegacyDatetimeCode=false&serverTimezone=America/New_York", "root", "Bullshit@123");
+		Statement s = conn.createStatement();
+		ResultSet rs = s.executeQuery("select * from contactdetails");
+
+		while (rs.next()) {
+
+			Assert.assertEquals(rs.getString("Address"), addr);
+			Assert.assertTrue(rs.getString("Email").contains(firstemail));
+			Assert.assertTrue(rs.getString("Email").contains(secondemail));
+			Assert.assertEquals(rs.getString("Phone"), phone);
 
 		}
 

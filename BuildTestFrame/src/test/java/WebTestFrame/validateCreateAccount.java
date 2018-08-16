@@ -16,7 +16,7 @@ import pageObjects.CreateAnAccount;
 import pageObjects.LandingPage;
 import resources.base;
 
-//This class has test cases to validate proper
+//This class has test cases to validate sign up page
 public class validateCreateAccount extends base {
 	public static Logger log = LogManager.getLogger(base.class.getName());
 
