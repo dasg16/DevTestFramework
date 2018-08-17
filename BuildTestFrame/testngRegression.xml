@@ -6,60 +6,14 @@
          <listener class-name="resources.ExtentReporterNG"/>
 
 </listeners>
-<!-- <test name="Test1">
-    <classes>
-      
-      <class name="WebTestFrame.validateCreateAccount"/>
-      
-       </classes>
+<test name="Regression">
+
+		<groups>
+            <run>
+                <include name ="Regression"/>
+            </run>
+        </groups>
+    
 </test>
-  
-<test name="Test3">
-      <classes>
-      <class name="WebTestFrame.validateHomePage">
-         <method exlude name="WebTestFrame.validateHomePage">      
-      
-      </class>
-    </classes>
-</test> -->
-
-
-<!-- <test name="Test5">
-      <classes>
-      <class name="WebTestFrame.validateLogin"/>
-      
-    </classes>
-</test>  -->
-
-<test name="Test2">
-      <classes>
-      <class name="WebTestFrame.validateContact"/>
-      
-    </classes>
-</test>
-
-  
-<!-- <test name="Test4">
-      <classes>
-      <class name="WebTestFrame.ValidatePractice">
-      
-      </class>
-    </classes>
-</test> -->
-  
-
- 
-
- 
-  <!-- <test name="Test2">
-    <classes>
-      <class name="WebTestFrame.validateHomePage"/>
-      <class name="WebTestFrame.validateNavigationBar"/>
-      <class name="WebTestFrame.ValidatePractice">
-      <class name="WebTestFrame.validateCreateAccount"/>
-      <class name="WebTestFrame.validateLogin"/>
-      
-    </classes>
-  </test> Test -->
   
 </suite> <!-- Suite -->

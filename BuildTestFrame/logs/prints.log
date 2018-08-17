@@ -75,3 +75,14 @@
 [INFO ] 2018-08-16 00:38:09.395 [main] base - Validated contact phone number
 [INFO ] 2018-08-16 00:38:09.504 [main] base - Validate first Email ID
 [INFO ] 2018-08-16 00:38:09.620 [main] base - Validate Second Email ID
+[INFO ] 2018-08-16 19:53:04.464 [main] base - Driver has been initialized
+[INFO ] 2018-08-16 20:08:04.133 [main] base - Driver has been initialized
+[INFO ] 2018-08-16 20:08:14.889 [main] base - Clicked on the close button of the pop-up
+[INFO ] 2018-08-16 20:08:17.307 [main] base - Clicked on the loggin button
+[INFO ] 2018-08-16 20:08:21.220 [main] base - Clicked on the Sign Up button
+[INFO ] 2018-08-16 20:08:21.263 [main] base - Validated 'Email is required' error message
+[INFO ] 2018-08-16 20:09:34.593 [main] base - Driver has been initialized
+[INFO ] 2018-08-16 20:10:21.406 [main] base - Clicked on the close button of the pop-up
+[INFO ] 2018-08-16 20:10:28.650 [main] base - Clicked on the loggin button
+[INFO ] 2018-08-16 20:10:41.781 [main] base - Clicked on the Sign Up button
+[INFO ] 2018-08-16 20:10:41.829 [main] base - Validated 'Email is required' error message

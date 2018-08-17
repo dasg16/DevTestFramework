@@ -26,7 +26,7 @@ public class validateLogin extends base {
 
 	public static Logger log = LogManager.getLogger(base.class.getName());
 
-	@BeforeTest
+	@BeforeTest(groups = { "Smoke" })
 	public void initialize() throws IOException {
 
 		driver = initializeDriver();
@@ -34,7 +34,7 @@ public class validateLogin extends base {
 		driver.get(prop.getProperty("url"));
 	}
 
-	@BeforeClass
+	@BeforeClass(groups = { "Smoke" })
 	public void validPopClose() {
 		LandingPage lanp = new LandingPage(driver);
 		lanp.getCloseButton().click();
@@ -42,7 +42,7 @@ public class validateLogin extends base {
 		lanp.getLogin().click();
 	}
 
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData", groups = { "Smoke" })
 	public void validEmailPwd(String username, String password) throws IOException {
 
 		LoginPage logp = new LoginPage(driver);
@@ -196,7 +196,7 @@ public class validateLogin extends base {
 
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, groups = { "Smoke" })
 	public void validForgetPwd() throws IOException {
 
 		LoginPage logp = new LoginPage(driver);

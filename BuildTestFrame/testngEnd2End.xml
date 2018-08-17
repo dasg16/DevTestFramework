@@ -6,60 +6,73 @@
          <listener class-name="resources.ExtentReporterNG"/>
 
 </listeners>
-<!-- <test name="Test1">
-    <classes>
+<test name="End2End1">
+
+		<groups>
+            <run>
+                <include name ="End2End"/>
+            </run>
+        </groups>
+    
+</test>
+
+<test name="End2End2">
+
+		<groups>
+            <run>
+                <include name ="End2End"/>
+            </run>
+        </groups>
+        
+        <classes>
       
       <class name="WebTestFrame.validateCreateAccount"/>
       
        </classes>
-</test>
-  
-<test name="Test3">
-      <classes>
+       
+</test>       
+ 
+  <test name="End2End3">    
+ 
+ <groups>
+            <run>
+                <include name ="End2End"/>
+            </run>
+        </groups>
+       
+       <classes>
       <class name="WebTestFrame.validateHomePage">
-         <method exlude name="WebTestFrame.validateHomePage">      
       
       </class>
     </classes>
-</test> -->
+ 
+ </test>
+<test name="End2End4">    
+<groups>
+            <run>
+                <include name ="End2End"/>
+            </run>
+        </groups>
 
-
-<!-- <test name="Test5">
-      <classes>
+    <classes>
       <class name="WebTestFrame.validateLogin"/>
       
     </classes>
-</test>  -->
-
-<test name="Test2">
-      <classes>
-      <class name="WebTestFrame.validateContact"/>
+ 
+ </test>
+ <test name="End2End5">   
+ 
+ <groups>
+            <run>
+                <include name ="End2End"/>
+            </run>
+        </groups>
+     <classes>
+      <class name="WebTestFrame.ValidatePractice">
       
+      </class>
     </classes>
+    
 </test>
 
-  
-<!-- <test name="Test4">
-      <classes>
-      <class name="WebTestFrame.ValidatePractice">
-      
-      </class>
-    </classes>
-</test> -->
-  
-
- 
-
- 
-  <!-- <test name="Test2">
-    <classes>
-      <class name="WebTestFrame.validateHomePage"/>
-      <class name="WebTestFrame.validateNavigationBar"/>
-      <class name="WebTestFrame.ValidatePractice">
-      <class name="WebTestFrame.validateCreateAccount"/>
-      <class name="WebTestFrame.validateLogin"/>
-      
-    </classes>
-  </test> Test -->
-  
 </suite> <!-- Suite -->

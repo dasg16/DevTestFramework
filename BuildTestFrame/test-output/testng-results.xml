@@ -1,45 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15085" started-at="2018-08-16T04:37:55Z" finished-at="2018-08-16T04:38:10Z">
+  <suite name="Suite" duration-ms="20852" started-at="2018-08-17T00:08:00Z" finished-at="2018-08-17T00:08:21Z">
     <groups>
+      <group name="Smoke">
+        <method signature="validateCreateAccount.validEmailReqdError()[pri:0, instance:WebTestFrame.validateCreateAccount@131774fe]" name="validEmailReqdError" class="WebTestFrame.validateCreateAccount"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Test2" duration-ms="15085" started-at="2018-08-16T04:37:55Z" finished-at="2018-08-16T04:38:10Z">
-      <class name="WebTestFrame.validateContact">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="initialize" is-config="true" duration-ms="9109" started-at="2018-08-16T00:37:55Z" finished-at="2018-08-16T00:38:04Z">
+    <test name="Smoke1" duration-ms="20852" started-at="2018-08-17T00:08:00Z" finished-at="2018-08-17T00:08:21Z">
+      <class name="WebTestFrame.validateCreateAccount">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:WebTestFrame.validateCreateAccount@131774fe]" name="initialize" is-config="true" duration-ms="9451" started-at="2018-08-16T20:08:00Z" finished-at="2018-08-16T20:08:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validContactTitle()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="validContactTitle" duration-ms="5062" started-at="2018-08-16T00:38:04Z" finished-at="2018-08-16T00:38:09Z">
+        <test-method status="PASS" signature="validEmailReqdError()[pri:0, instance:WebTestFrame.validateCreateAccount@131774fe]" name="validEmailReqdError" duration-ms="11295" started-at="2018-08-16T20:08:09Z" finished-at="2018-08-16T20:08:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validContactTitle -->
-        <test-method status="PASS" signature="validContactDetlsLable()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="validContactDetlsLable" duration-ms="84" started-at="2018-08-16T00:38:09Z" finished-at="2018-08-16T00:38:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validContactDetlsLable -->
-        <test-method status="PASS" signature="validContactAddr()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="validContactAddr" duration-ms="42" started-at="2018-08-16T00:38:09Z" finished-at="2018-08-16T00:38:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validContactAddr -->
-        <test-method status="PASS" signature="validContactPhone()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="validContactPhone" duration-ms="65" started-at="2018-08-16T00:38:09Z" finished-at="2018-08-16T00:38:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validContactPhone -->
-        <test-method status="PASS" signature="validContactEmails()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="validContactEmails" duration-ms="224" started-at="2018-08-16T00:38:09Z" finished-at="2018-08-16T00:38:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validContactEmails -->
-        <test-method status="PASS" signature="databaseConnLogin()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="databaseConnLogin" duration-ms="363" started-at="2018-08-16T00:38:09Z" finished-at="2018-08-16T00:38:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- databaseConnLogin -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTestFrame.validateContact@74fe5c40]" name="teardown" is-config="true" duration-ms="107" started-at="2018-08-16T00:38:09Z" finished-at="2018-08-16T00:38:10Z">
+        </test-method> <!-- validEmailReqdError -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:WebTestFrame.validateCreateAccount@131774fe]" name="teardown" is-config="true" duration-ms="85" started-at="2018-08-16T20:08:21Z" finished-at="2018-08-16T20:08:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- WebTestFrame.validateContact -->
-    </test> <!-- Test2 -->
+      </class> <!-- WebTestFrame.validateCreateAccount -->
+    </test> <!-- Smoke1 -->
   </suite> <!-- Suite -->
 </testng-results>

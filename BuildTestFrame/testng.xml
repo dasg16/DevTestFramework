@@ -6,7 +6,7 @@
          <listener class-name="resources.ExtentReporterNG"/>
 
 </listeners>
-<!-- <test name="Test1">
+<test name="Test1">
     <classes>
       
       <class name="WebTestFrame.validateCreateAccount"/>
@@ -21,7 +21,7 @@
       
       </class>
     </classes>
-</test> -->
+</test>
 
 
 <!-- <test name="Test5">
@@ -39,13 +39,13 @@
 </test>
 
   
-<!-- <test name="Test4">
+<test name="Test4">
       <classes>
       <class name="WebTestFrame.ValidatePractice">
       
       </class>
     </classes>
-</test> -->
+</test>
   
 
  

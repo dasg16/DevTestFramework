@@ -23,7 +23,7 @@ public class ValidatePractice extends base {
 
 	public static Logger log = LogManager.getLogger(base.class.getName());
 
-	@BeforeTest
+	@BeforeTest(groups = { "Smoke", "End2End" })
 	public void initialize() throws IOException {
 
 		driver = initializeDriver();
@@ -32,7 +32,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups = { "Smoke", "End2End" })
 	public void validPracticeLink() throws IOException, Exception {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -62,7 +62,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "End2End" })
 	public void validPracticeRadio() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -79,7 +79,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = { "End2End" })
 	public void validSuggessionTxtBox() {
 
 		PracticePage pracP = new PracticePage(driver);
@@ -98,7 +98,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups = { "End2End" })
 	public void validPracticeDropdown() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -129,7 +129,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4, groups = { "End2End" })
 	public void validPracticeCheckbox() {
 		PracticePage pracP = new PracticePage(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -160,7 +160,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 5, groups = { "Smoke", "End2End" })
 	public void validPracticeSwitchWindow() {
 		PracticePage pracP = new PracticePage(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -181,7 +181,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, groups = { "End2End" })
 	public void validPracticeSwitchTab() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -200,7 +200,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, groups = { "End2End" })
 	public void validPracticeSwitchAlert() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -219,7 +219,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 8, groups = { "End2End" })
 	public void validPracticeElementDisplayed() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -237,7 +237,7 @@ public class ValidatePractice extends base {
 		log.info("Validated show button");
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 9, groups = { "End2End" })
 	public void validPracticeWebTable() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -256,7 +256,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10, groups = { "End2End" })
 	public void validPracMouseHovrTop() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -270,7 +270,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 11, groups = { "End2End" })
 	public void validPracMouseHovrReload() {
 		PracticePage pracP = new PracticePage(driver);
 
@@ -282,7 +282,7 @@ public class ValidatePractice extends base {
 
 	}
 
-	@AfterTest
+	@AfterTest(groups = { "Smoke", "End2End" })
 	public void teardown() {
 		driver.quit();
 		driver = null;

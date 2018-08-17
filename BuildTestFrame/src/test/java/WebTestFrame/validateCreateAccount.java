@@ -21,7 +21,7 @@ public class validateCreateAccount extends base {
 	public static Logger log = LogManager.getLogger(base.class.getName());
 
 	// Initialized driver and got the URL.
-	@BeforeTest
+	@BeforeTest(groups = { "Smoke" })
 	public void initialize() throws IOException {
 
 		driver = initializeDriver();
@@ -31,7 +31,7 @@ public class validateCreateAccount extends base {
 
 	// Validate create account functionality with valid inputs(that means with new
 	// email ID and new details).
-	@Test(enabled = false)
+	@Test(enabled = false, groups = { "Smoke" })
 	public void validSignUp() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -65,7 +65,7 @@ public class validateCreateAccount extends base {
 	// messages.
 
 	// Method for "Email is required" error message.
-	@Test(priority = 1)
+	@Test(priority = 1, groups = { "Smoke" })
 	public void validEmailReqdError() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -339,7 +339,7 @@ public class validateCreateAccount extends base {
 	}
 
 	// Close the driver and set it to null.
-	@AfterTest
+	@AfterTest(groups = { "Smoke" })
 	public void teardown() {
 		driver.close();
 		driver = null;

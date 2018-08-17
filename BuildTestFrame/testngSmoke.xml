@@ -6,60 +6,62 @@
          <listener class-name="resources.ExtentReporterNG"/>
 
 </listeners>
-<!-- <test name="Test1">
-    <classes>
+<test name="Smoke1">
+
+		<groups>
+            <run>
+                <include name ="Smoke"/>
+            </run>
+        </groups>
+        
+        <classes>
       
       <class name="WebTestFrame.validateCreateAccount"/>
       
        </classes>
-</test>
-  
-<test name="Test3">
-      <classes>
+       
+</test>       
+ 
+  <test name="Smoke2">    
+ 
+ <groups>
+            <run>
+                <include name ="Smoke"/>
+            </run>
+        </groups>  
+       
+       <classes>
       <class name="WebTestFrame.validateHomePage">
-         <method exlude name="WebTestFrame.validateHomePage">      
       
       </class>
     </classes>
-</test> -->
-
-
-<!-- <test name="Test5">
-      <classes>
-      <class name="WebTestFrame.validateLogin"/>
-      
-    </classes>
-</test>  -->
-
-<test name="Test2">
-      <classes>
-      <class name="WebTestFrame.validateContact"/>
-      
-    </classes>
-</test>
-
-  
-<!-- <test name="Test4">
-      <classes>
-      <class name="WebTestFrame.ValidatePractice">
-      
-      </class>
-    </classes>
-</test> -->
-  
-
  
+ </test>
+<test name="Smoke3">    
+<groups>
+            <run>
+                <include name ="Smoke"/>
+            </run>
+        </groups>
 
- 
-  <!-- <test name="Test2">
     <classes>
-      <class name="WebTestFrame.validateHomePage"/>
-      <class name="WebTestFrame.validateNavigationBar"/>
-      <class name="WebTestFrame.ValidatePractice">
-      <class name="WebTestFrame.validateCreateAccount"/>
       <class name="WebTestFrame.validateLogin"/>
       
     </classes>
-  </test> Test -->
-  
+ 
+ </test>
+ <test name="Smoke4">   
+ 
+ <groups>
+            <run>
+                <include name ="Smoke"/>
+            </run>
+        </groups>
+     <classes>
+      <class name="WebTestFrame.ValidatePractice">
+      
+      </class>
+    </classes>
+    
+</test>
 </suite> <!-- Suite -->

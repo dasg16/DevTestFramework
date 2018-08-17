@@ -32,7 +32,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to verify Validated facebook page link on HomePage
-	@Test(enabled = true)
+	@Test
 	public void checkLinksToFacebook() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -70,7 +70,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to verify Validated YouTube page link on HomePage
-	@Test(enabled = true)
+	@Test
 	public void checkLinksToYouTube() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -111,7 +111,7 @@ public class validateHomePage extends base {
 
 	}
 
-	@Test(enabled = true)
+	@Test
 	public void validFeaturedCourses() throws IOException {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -186,7 +186,7 @@ public class validateHomePage extends base {
 
 	// Method to verify both the links in the image and text for the selenium
 	// feature course links to the same URL.
-	@Test(enabled = true)
+	@Test
 	public void validFCSelenimLinks() throws IOException {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -224,7 +224,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to verify ratings for the Selenium feature course.
-	@Test(enabled = true)
+	@Test
 	public void validFCSelenimRate() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -239,7 +239,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to verify number of enrolled students for the Selenium feature course.
-	@Test(enabled = true)
+	@Test
 	public void validFCSeleStudEnrol() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -254,7 +254,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to verify the actual price of the Selenium feature course.
-	@Test(enabled = true)
+	@Test
 	public void validFCSeleniumPrice() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -267,7 +267,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to verify the price of the Selenium feature course after discount.
-	@Test(enabled = true)
+	@Test
 	public void validFCSeleniumDiscPrice() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -281,7 +281,7 @@ public class validateHomePage extends base {
 
 	// Method to validate if all the topics in the navigation bar actually displayed
 	// on the webpage.
-	@Test(enabled = true)
+	@Test
 	public void homePNavigationDisplayed() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -319,7 +319,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate Home page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test
 	public void validNaviBarHome() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -335,7 +335,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate Courses page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test(groups={"Smoke"})
 	public void validNaviBarCourses() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -352,7 +352,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate Videos page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test
 	public void validNaviBarVideos() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -369,7 +369,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate Interview Guide page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test
 	public void validNaviBarIntGuides() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -386,7 +386,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate Practice page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test(groups={"Smoke"})
 	public void validNaviBarPractice() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -403,7 +403,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate Blog page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test
 	public void validNaviBarBlog() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -420,7 +420,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate About page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test
 	public void validNaviBarAbout() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -437,7 +437,7 @@ public class validateHomePage extends base {
 	}
 
 	// Method to validate Contact page link on HomePage's navigation bar
-	@Test(enabled = true)
+	@Test
 	public void validNaviBarContact() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
