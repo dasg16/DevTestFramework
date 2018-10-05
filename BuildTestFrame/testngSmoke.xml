@@ -37,7 +37,7 @@
     </classes>
  
  </test>
-<test name="Smoke3">    
+<!-- <test name="Smoke3">    
 <groups>
             <run>
                 <include name ="Smoke"/>
@@ -49,7 +49,7 @@
       
     </classes>
  
- </test>
+ </test> -->
  <test name="Smoke4">   
  
  <groups>
