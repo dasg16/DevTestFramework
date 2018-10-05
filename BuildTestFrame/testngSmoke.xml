@@ -6,7 +6,7 @@
          <listener class-name="resources.ExtentReporterNG"/>
 
 </listeners>
-<test name="Smoke1">
+<!-- <test name="Smoke1">
 
 		<groups>
             <run>
@@ -20,7 +20,7 @@
       
        </classes>
        
-</test>       
+</test>        -->
  
   <test name="Smoke2">    
  
