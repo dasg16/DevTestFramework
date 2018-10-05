@@ -5,9 +5,25 @@
     <classes>
       <class name="WebTestFrame.validateHomePage">
         <methods>
-          <include name="checkLinksToSocialMedia"/>
+          <include name="checkLinksToFacebook"/>
+          <include name="checkLinksToYouTube"/>
+          <include name="validFCSelenimLinks"/>
+          <include name="homePNavigationDisplayed"/>
           <include name="initialize"/>
+          <include name="validFCSeleniumDiscPrice"/>
           <include name="validFeaturedCourses"/>
+          <include name="validNaviBarHome"/>
+          <include name="validNaviBarBlog"/>
+          <include name="validFCSeleStudEnrol"/>
+          <include name="validNaviBarContact"/>
+          <include name="validFCSeleniumPrice"/>
+          <include name="validNaviBarPractice"/>
+          <include name="validNaviBarIntGuides"/>
+          <include name="validNaviBarVideos"/>
+          <include name="validFCSelenimRate"/>
+          <include name="validNaviBarAbout"/>
+          <include name="teardown"/>
+          <include name="validNaviBarCourses"/>
         </methods>
       </class> <!-- WebTestFrame.validateHomePage -->
     </classes>

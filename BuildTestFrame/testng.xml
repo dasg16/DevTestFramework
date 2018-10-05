@@ -6,22 +6,22 @@
          <listener class-name="resources.ExtentReporterNG"/>
 
 </listeners>
-<test name="Test1">
+<!-- <test name="Test1">
     <classes>
       
       <class name="WebTestFrame.validateCreateAccount"/>
       
        </classes>
-</test>
+</test> -->
   
-<test name="Test3">
+<!-- <test name="Test3">
       <classes>
       <class name="WebTestFrame.validateHomePage">
          <method exlude name="WebTestFrame.validateHomePage">      
       
       </class>
     </classes>
-</test>
+</test> -->
 
 
 <!-- <test name="Test5">
@@ -31,12 +31,12 @@
     </classes>
 </test>  -->
 
-<test name="Test2">
+<!-- <test name="Test2">
       <classes>
       <class name="WebTestFrame.validateContact"/>
       
     </classes>
-</test>
+</test> -->
 
   
 <test name="Test4">
@@ -45,7 +45,7 @@
       
       </class>
     </classes>
-</test>
+</test> -->
   
 
  

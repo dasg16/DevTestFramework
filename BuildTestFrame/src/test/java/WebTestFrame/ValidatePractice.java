@@ -76,7 +76,7 @@ public class ValidatePractice extends base {
 			pracP.getRadioButtonCommonPath().get(i).click();
 
 		}
-
+QACLICK
 	}
 
 	@Test(priority = 2, groups = { "End2End" })

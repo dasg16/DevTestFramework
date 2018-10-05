@@ -21,7 +21,7 @@ public class validateCreateAccount extends base {
 	public static Logger log = LogManager.getLogger(base.class.getName());
 
 	// Initialized driver and got the URL.
-	@BeforeTest(groups = { "Smoke" })
+	@BeforeTest(groups = { "Smoke", "End2End" })
 	public void initialize() throws IOException {
 
 		driver = initializeDriver();
@@ -31,7 +31,7 @@ public class validateCreateAccount extends base {
 
 	// Validate create account functionality with valid inputs(that means with new
 	// email ID and new details).
-	@Test(enabled = false, groups = { "Smoke" })
+	@Test(enabled = false, groups = { "Smoke", "End2End" })
 	public void validSignUp() throws IOException {
 
 		LandingPage lanp = new LandingPage(driver);
@@ -339,7 +339,7 @@ public class validateCreateAccount extends base {
 	}
 
 	// Close the driver and set it to null.
-	@AfterTest(groups = { "Smoke" })
+	@AfterTest(groups = { "Smoke", "End2End" })
 	public void teardown() {
 		driver.close();
 		driver = null;

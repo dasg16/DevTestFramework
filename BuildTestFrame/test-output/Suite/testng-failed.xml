@@ -5,16 +5,15 @@
     <listener class-name="WebTestFrame.listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="Test2(failed)">
+  <test name="Test4(failed)">
     <classes>
-      <class name="WebTestFrame.validateContact">
+      <class name="WebTestFrame.ValidatePractice">
         <methods>
+          <include name="validPracticeRadio"/>
           <include name="initialize"/>
           <include name="teardown"/>
-          <include name="databaseConnLogin"/>
-          <include name="validContactAddr"/>
         </methods>
-      </class> <!-- WebTestFrame.validateContact -->
+      </class> <!-- WebTestFrame.ValidatePractice -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Suite] -->
